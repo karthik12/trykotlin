@@ -1,5 +1,5 @@
 val Person.dislikeCount: Int
-    get() = 3
+     get() = 3
 
 
 fun main() {
@@ -9,12 +9,14 @@ fun main() {
     println(pair)
 
     infix fun String.onto(other: String) = Pair(this, other)
+
     val myPair = "McLaren" onto "Lucas"
     println(myPair)
 
     val sophia = Person("Sophia")
     val claudia = Person("Claudia")
     sophia likes claudia
+
 
     /**
      * Operator func
@@ -35,8 +37,10 @@ fun main() {
     println(Person("Karthik").dislikeCount)
 }
 
+
 class Person(val name: String) {
-    val likedPeople = mutableListOf<Person>()
+    var likedPeople = mutableListOf<Person>()
+
     infix fun likes(other: Person) {
         likedPeople.add(other)
     }

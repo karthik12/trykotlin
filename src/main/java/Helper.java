@@ -8,9 +8,12 @@ public class Helper {
         return "I am from Java";
     }
 
-
+    @Nullable
     public String interOpNullFunc(){
         return null;
     }
 
+    public static void main(String[] args) {
+
+    }
 }

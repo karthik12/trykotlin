@@ -3,10 +3,20 @@ package Scope
 fun main() {
 
     val student = Student()
-    student.apply {
-        name = "MyName"
-        id = 12
+    student.address = "dfsdf"
+    student.age = 24
+    student.name = "sdf"
+
+    val apply = student.also {
+        it.name = "dsgd"
+        it.id = 343
     }
+
+    apply.name
+    /*   student.apply {
+           name = "MyName"
+           id = 12
+       }*/
 }
 
 

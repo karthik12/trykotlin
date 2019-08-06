@@ -7,6 +7,6 @@ fun operation(): (Int) -> Int {                                     // 1
 fun square(x: Int) = x * x                                          // 2
 
 fun main() {
-    val func = operation()                                          // 3
+    val func = operation()
     println(func(2))                                                // 4
 }

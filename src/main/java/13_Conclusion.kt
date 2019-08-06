@@ -37,4 +37,6 @@ fun main() {
     """.trimIndent()
 
     println("Slack Channel:\n$slackChannel")
+
+    println("\nGitHub Url:\nhttps://github.com/karthik12/trykotlin")
 }

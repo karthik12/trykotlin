@@ -28,6 +28,12 @@ fun main() {
     val sum1 = fun Int.(other: (Int)): Int = this + other
 
 
-    //With generics we can achieve still more
+    var greet: String.() -> Unit = { println("Hello $this") }
+
+
+    greet("Android team")
+
+    //koltin standard library is full of this. -  ex: scope function
+    //With generics we can achieve still more - todo
 
 }

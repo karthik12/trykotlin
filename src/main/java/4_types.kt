@@ -5,8 +5,8 @@ fun main() {
      * Any?
      * Unit?
      */
-    fun types(): Unit {
-
+    fun types(): Any {
+        return "sfdf"
     }
 
 
@@ -26,6 +26,6 @@ fun main() {
     /**
      * Elvis explain
      */
-    interOpNullFunc.length
+    interOpNullFunc!!.length
 
 }

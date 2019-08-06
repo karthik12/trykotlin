@@ -2,7 +2,7 @@ fun printMessage(message: String): Unit {                               // 1
     println(message)
 }
 
-fun printMessageWithPrefix(message: String, prefix: String = "Info") {  // 2
+fun printMessageWithPrefix(message: String, prefix: String = "Info")  {  // 2
     println("[$prefix] $message")
 }
 
@@ -16,6 +16,7 @@ fun main() {
     printMessage("Hello")                                               // 5
     printMessageWithPrefix("Hello", "Log")                              // 6
     printMessageWithPrefix("Hello")                                     // 7
-    printMessageWithPrefix(prefix = "Log", message = "Hello")           // 8
+    printMessageWithPrefix(prefix = "Log", message = "Hello")
+    printMessageWithPrefix(message = "Message", prefix = "predfs")
     println(sum(1, 2))                                                  // 9
 }

@@ -6,7 +6,7 @@ fun main() {
 }
 
 fun whenAssign(obj: Any): Any {
-    val result = when (obj) {
+    val result =  when (obj) {
         1 -> "one"                              // 2
         "Hello" -> 1                            // 3
         is Long -> false                        // 4
@@ -24,7 +24,11 @@ class MyClass
 fun loop(){
     val cakes = listOf("carrot", "cheese", "chocolate")
 
-    for (cake in cakes) { //Ranges explain 
+   for (cake in cakes) { //Ranges explain
         println("Yummy, it's a $cake cake!")
+    }
+
+    for( value in 1..10){
+        print(value)
     }
 }
